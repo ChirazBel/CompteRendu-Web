@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mesStylesLog.css">
+    <title>Accueil</title>
+</head>
+<body>
+    
+    <header>
+        <div class="entoureImg">
+        <img src="images/livre.jpg" alt="livre"/>
+    </div>
+        <h1>Bienvenue sur le Portail documentaire</h1>
+    </header>
+    <nav>
+        <a href="#">accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Mon Compte</a>
+    </nav>
+    <section>
+        <h2>Accueil de BookLibrary</h2>
+        <div>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="Big()">Big</button>
+            <button onclick="Small()">Small</button>
+            <button onclick="Normal()">Normal</button>
+            <br/>
+            <video id="video" width="300">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <footer>
+        BookLibrary, Tunis
+        <a href="pageLégales.html">Mentions Légales</a>
+    </footer>
+    <script>
+        var vieo=document.getElementById("video");
+        function playPause(){
+            if(video.paused)
+            video.play();
+            else
+            video.pause();
+        }
+        function Big(){
+            video.width=600;
+        }
+        function Small(){
+            video.width=200;
+        }
+        function Normal(){
+            video.width=300;
+        }
+        
+    </script>
+</body>
+</html>

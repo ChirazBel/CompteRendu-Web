@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mesStyles.css">
+    <title>accueil</title>
+    </head>
+    <body>
+        
+    <h1>Bienvenue sur le Portail documentaire</h1>
+    <div id="info" ondblclick="alert('double click')">
+        <a id="infoPra"><h2>informations pratique </h2></a>
+    <a href="#infoInscript" >info inscriptions</a>
+    <a href="#infoPret">info prets</a>
+   </div>
+    <br/>
+    <a href="infoPratique.html">Details sur l'horaire</a>
+       <dl>
+            <dt> adresse </dt>
+                <dd> 10 rue de la justice </dd>
+            <dt> horaires </dt>
+            <dt> horaire_hors periodes scolaires </dt>
+                <dd>le mardi et le jeudi de 12h à 18h</dd>
+                <dd>le mercredi et le samedi de 10h à 18h</dd>
+                <dd>le vendredi de 12h à 19h</dd>
+                <dd>fermé le jeudi</dd>
+            <dt> horaire-periode scolaire </dt>
+                <dd>les mardi,mercredi,jeudi,vendredi de 14h à 18h</dd>
+                <dd>le samedi de 10h à 13h</dd>
+                <dd>fermé le lundi</dd>
+            <dt> tarifs </dt>
+                 <p>carte de pret livre et acces EPN: Gratuite pour les Montageronnais</p>
+                 
+        </dl>
+        <div id="inscript">
+    <a id="infoInscript" onmouseover="alert('Passage de la souris')"> <h2>Inscriptions</h2></a>
+    <p> la carte de lecture est individuelle et valable pendant un an a partie de la date dinscription</p>
+    <a href="#infoPra"> Info pratiques</a>
+    <a href="infoPret">Info prets</a>
+          </div>
+    <div id="pret" onmouseout="alert('la souris sort')">
+    <a id="infopret"><h2>prets</h2></a>
+   
+    <p> les documents doivent etre rendus dans les </p>
+    <a href="#infoPra"> Info pratiques</a>
+    <a href="infoInscript">Info prets</a>
+</div>
+</body>
+</html>

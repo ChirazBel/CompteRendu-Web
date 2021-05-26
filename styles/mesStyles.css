@@ -1,0 +1,19 @@
+#info {
+    border: solid 10px black;
+    margin :50px;
+    background-color: rgb(64, 223, 235);
+    padding: 30px;
+     
+  }
+  #inscript{
+    border: solid 10px black;
+    margin :50px;
+    background-color:violet;
+    padding: 30px; 
+  }
+  #pret{
+    border: solid 10px black;
+    margin :50px;
+    background-color: rgb(242, 245, 61);
+    padding: 30px;
+  }

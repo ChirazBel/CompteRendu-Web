@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mesStylesLog.css">
+    <title>Catalogue</title>
+</head>
+<body>
+    
+    <header>
+        <div class="entoureImg">
+        <img src="images/livre.jpg" alt="livre"/>
+    </div>
+        <h1>Bienvenue sur le Portail documentaire</h1>
+    </header>
+    <nav>
+        <a href="acceuil.html">accueil</a>
+        <a href="#">Catalogue</a>
+        <a href="login.html">Mon Compte</a>
+    </nav>
+    <section>
+        <h2>Notre Catalogue</h2>
+        <form action="catalogue.html" method="post">
+            <h3>Choisir votre type de support : </h3>
+            <fieldset>
+                <legend>Livres</legend>
+                <select name="txLivres">
+                    <option>Adultes</option>
+                    <option>Adolescent</option>
+                    <option>Jeunesse</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Revues</legend>
+                <input list="revues" name="liRevues"/>
+                <datalist>
+                    <option>Journaliére</option>
+                    <option>Hebdomadaire</option>
+                    <option>Mensuelle</option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Numériques</legend>
+                <input type="radio" name="rdNum" value="CD"/>
+                <label for="rdNum">CD</label>
+            </br>
+                <input type="radio" name="rdNum" value="DVD"/>
+                <label for="rdNum-dvd">DVD</label>
+            </fieldset>
+        </br>
+            <input type="submit" value="Soumettre"/>
+        </form>
+    </section>
+    <footer>
+        <p>BookLibrary, Tunis
+        <span id="mailto">
+            <a href="mailto:belaaliachiraz15@gmail.com">Nous écrire</a>
+        </span></p>
+    </footer>
+</body>
+</html>

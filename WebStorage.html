@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function counter(){
+            if(typeof(Storage)!=="undefined"){
+                if(localStorage.clickcount){
+                    localStorage.clickcount=Number(localStorage.clickcount)+1;
+                }else{
+                    localStorage.clickcount=1;
+                }
+                document.getElementById("result").innerHTML="Vous avez cliquer " + localStorage.clickcount+" fois";
+            }else{
+                document.getElementById("result").innerHTML="Navigateur ne supporte pas le web storage";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="counter()">Cliquer ici!</button>
+    <div id="result"></div>
+</body>
+</html>

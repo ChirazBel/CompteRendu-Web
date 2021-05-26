@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mesStylesLog.css">
+    <script src="scripts/mesScripts.js" type="text/javascript"></script>
+    <title>Login</title>
+</head>
+<body>
+    
+    <header>
+        <div class="entoureImg">
+        <img src="images/livre.jpg" alt="livre"/>
+    </div>
+        <h1>Bienvenue sur le Portail documentaire</h1>
+    </header>
+    <nav>
+        <a href="acceuil.html">accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Mon Compte</a>
+    </nav>
+    <section>
+        <h2>Accés à votre espace client</h2>
+        <form action="Bienvenue.html">
+            <label>Votre nom: </label>
+            <input type="text" name="txNom" size="20" onfocus="montrer('aideLogin');" onblur="cacher('aideLogin');"/>
+        </br>
+            <label>Mot de passe: </label>
+            <input type="password" name="txMdp" size="20" onfocus="montrer('aidePassword');"  onblur="cacher('aidePassword');"/>
+        </br>
+            <input type="submit" value="Connexion" onClick="return validationLogin();" />
+            <div id="aideLogin" class="aide">
+                <p>Entrer votre identifiant</p>
+            </div>
+            <div id="aidePassword" class="aide">
+                <p>Entrer votre mot de passe</p>
+            </div>
+        </form>
+    </section>
+    <footer>
+        BookLibrary, Tunis
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function allowDrop(e){
+            e.preventDefault();
+        }
+        function Drag(e){
+            e.dataTransfer.setData("text",e.target.id);
+        }
+        function Drop(e){
+            e.preventDefault();
+            var data=e.dataTransfer.getData("text");
+            e.target.appendChild(document.getElementById(data));
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Drag & Drop</h3>
+    <p>Glisser et deplacer votre image dans les deux sens</p>
+    <div id="div1" ondrop="Drop(event)" ondragover="allowDrop(event)">
+        <img src="images/livre.jpg" draggable="true" ondragstart="Drag(event)" id="drag1" width="200" height="100"/>
+    </div>
+    <div id="div2" ondrop="Drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+</html>
